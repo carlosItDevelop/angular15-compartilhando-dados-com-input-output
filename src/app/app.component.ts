@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-[x: string]: any;
+
+  usuarioSelecionado: any;
 
   listaUsuarios = [
     { id: 1, nome: 'Alexandre' },

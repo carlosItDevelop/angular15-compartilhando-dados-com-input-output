@@ -7,16 +7,16 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class GaleriaComponent implements OnInit {
 
-  @Input() usuarios!: Array<any>;
+  @Input() usuarios: Array<any> | undefined;
 
   @Output() selecionado = new EventEmitter();
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  selecionando(usuario: any) {
+  public selecionando(usuario: any) {
     this.selecionado.emit(usuario);
   }
 }
