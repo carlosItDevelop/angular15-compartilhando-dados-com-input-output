@@ -16,7 +16,7 @@ export class GaleriaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public selecionando(usuario: any) {
+  public selecionandoUsuario(usuario: any) {
     this.selecionado.emit(usuario);
   }
 }
